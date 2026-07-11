@@ -1,20 +1,65 @@
+import { useTheme } from "../context/ThemeContext";
+
 function ProjectCard({ title, description, image }) {
+    const { styles } = useTheme();
+
     return (
-        <div className="border rounded-lg p-4 flex gap-4 items-start">
-            <div className="w-20 h-20 flex-shrink-0 bg-gray-100 border rounded flex items-center justify-center text-gray-400">
+        <div
+            className={`
+                p-4
+                flex
+                gap-4
+                items-start
+                ${styles.font}
+                ${styles.text}
+                ${styles.transition}
+            `}
+        >
+            <div
+                className={`
+                    w-16
+                    h-16
+                    flex-shrink-0
+                    border
+                    ${styles.borderColor}
+                    ${styles.rounded}
+                    flex
+                    items-center
+                    justify-center
+                    ${styles.textSecondary}
+                    ${styles.transition}
+                `}
+            >
                 {image ? (
                     <img
                         src={image}
                         alt={`Screenshot of ${title} project`}
-                        className="w-full h-full object-cover rounded"
+                        className={`
+                            w-full
+                            h-full
+                            object-cover
+                            ${styles.rounded}
+                        `}
                     />
                 ) : (
-                    <span>X</span>
+                    // fallback when no project image is provided
+                    <span className="text-xs">no image</span>
                 )}
             </div>
+
             <div>
-                <h3 className="text-lg font-semibold">{title}</h3>
-                <p className="text-gray-600">{description}</p>
+                <h3
+                    data-testid="project-card-title"
+                    className={`
+                        text-xl
+                        font-semibold
+                        ${styles.text}
+                    `}
+                >
+                    {title}
+                </h3>
+
+                <p className={styles.textSecondary}>{description}</p>
             </div>
         </div>
     );

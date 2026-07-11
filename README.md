@@ -1,18 +1,81 @@
-# React + Vite
+# Personal Project Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page React portfolio application for creating, viewing, and searching project cards. The app includes a theme system with multiple visual styles, responsive layouts, and reusable components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add new projects through a form
+    - Project title
+    - Description
+    - Image URL
+    - Form validation with error messaging
 
-## React Compiler
+- View projects in a reusable card layout
+    - Displays project images when available
+    - Provides a fallback when no image is supplied
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Search projects
+    - Filters projects by title or description
+    - Updates results as the user types
 
-Note: This will impact Vite dev & build performances.
+- Dynamic theme switching
+    - Multiple built-in themes:
+        - Modern
+        - Warm
+        - Retro
+        - Dark
+    - Theme styles are managed globally through React Context
 
-## Expanding the ESLint configuration
+- Responsive layout
+    - Mobile-friendly stacking
+    - Desktop grid layout for header elements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Component-based architecture
+    - Reusable React components:
+        - Header
+        - ThemeSwitcher
+        - AddProjectForm
+        - SearchBar
+        - ProjectList
+        - ProjectCard
+
+- Unique project identifiers
+    - New projects are assigned UUID-based IDs
+
+- Automated testing
+    - Component tests using Jest and React Testing Library
+    - Covers:
+        - Form validation and submission
+        - Project rendering
+        - Search functionality
+        - Theme switching behavior
+
+---
+
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+- React Context API
+- Jest
+- React Testing Library
+- UUID
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+
+Make sure you have:
+
+- Node.js installed
+- npm installed
+
+Check your versions:
+
+```bash
+node -v
+npm -v
+```
