@@ -128,9 +128,9 @@ Tests cover:
 - Form validation
 
 
-### File layout:
+### Component tree:
 
-summative-lab-portfolio-spa-with-react/
+```summative-lab-portfolio-spa-with-react/
 ├── public/
 │   └── favicon.svg
 └── src/
@@ -162,4 +162,4 @@ summative-lab-portfolio-spa-with-react/
      ├── App.jsx
      ├── main.jsx
      ├── index.html
-     └── index.css (contains backgrounds only, Tailwind used for everything else)
+     └── index.css (contains backgrounds only, Tailwind used for everything else)```
