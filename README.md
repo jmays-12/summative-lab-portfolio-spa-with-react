@@ -2,6 +2,10 @@
 
 A single-page React portfolio application for creating, viewing, and searching project cards. The app includes a theme system with multiple visual styles, responsive layouts, and reusable components.
 
+## Screenshot
+
+![Retro theme](./screenshots/screenshot.png)
+
 ## Features
 
 - Add new projects through a form with:
@@ -163,4 +167,4 @@ summative-lab-portfolio-spa-with-react/
      ├── App.jsx
      ├── main.jsx
      └── index.css (contains backgrounds only, Tailwind used for everything else)
-     ```
+ ```
