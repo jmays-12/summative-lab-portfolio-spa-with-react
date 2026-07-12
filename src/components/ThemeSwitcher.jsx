@@ -21,9 +21,11 @@ function ThemeSwitcher() {
                 onChange={(e) => setTheme(e.target.value)}
                 className={`
                     border
-                    px-2
+                    px-1
                     py-1
                     text-sm
+                    text-center
+                    
                     ${styles.text}
                     ${styles.surface}
                     ${styles.roundedControl}

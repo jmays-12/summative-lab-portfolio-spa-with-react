@@ -14,7 +14,7 @@ function App() {
 
     const [projects, setProjects] = useState([]);
     //const [projects, setProjects] = useState(ProjectsData);
-    //use this state for dummy data
+    //use this state instead for dummy data
     const [query, setQuery] = useState("");
 
     function addProject(newProject) {

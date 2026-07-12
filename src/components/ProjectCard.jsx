@@ -20,8 +20,7 @@ function ProjectCard({ title, description, image }) {
                     w-16
                     h-16
                     flex-shrink-0
-                    border
-                    ${styles.borderColor}
+                    ${styles.borderFull}
                     ${styles.rounded}
                     flex
                     items-center
@@ -33,7 +32,7 @@ function ProjectCard({ title, description, image }) {
                 {image ? (
                     <img
                         src={image}
-                        alt={`Screenshot of ${title} project`}
+                        alt={`${title} project`}
                         className={`
                             w-full
                             h-full
@@ -53,13 +52,14 @@ function ProjectCard({ title, description, image }) {
                     className={`
                         text-xl
                         font-semibold
-                        ${styles.text}
+                        ${styles.accent}
+
                     `}
                 >
                     {title}
                 </h3>
 
-                <p className={styles.textSecondary}>{description}</p>
+                <p className={`${styles.textSecondary}`}>{description}</p>
             </div>
         </div>
     );

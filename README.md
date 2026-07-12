@@ -1,10 +1,10 @@
-# Personal Project Showcase
+# Personal Project Showcase App
 
 A single-page React portfolio application for creating, viewing, and searching project cards. The app includes a theme system with multiple visual styles, responsive layouts, and reusable components.
 
 ## Features
 
-- Add new projects through a form
+- Add new projects through a form with:
     - Project title
     - Description
     - Image URL
@@ -27,10 +27,10 @@ A single-page React portfolio application for creating, viewing, and searching p
     - Theme styles are managed globally through React Context
 
 - Responsive layout
-    - Mobile-friendly stacking
+    - Mobile friendly stacking
     - Desktop grid layout for header elements
 
-- Component-based architecture
+- Component based hierarchy
     - Reusable React components:
         - Header
         - ThemeSwitcher
@@ -70,12 +70,96 @@ A single-page React portfolio application for creating, viewing, and searching p
 
 Make sure you have:
 
-- Node.js installed
+- Node.js installed (v18+ recommended)
 - npm installed
 
-Check your versions:
+### Installation
+
+1. Clone the repository:
 
 ```bash
-node -v
-npm -v
+git clone <repository-url>
 ```
+
+2. Navigate into the project directory:
+
+```bash
+cd summative-lab-portfolio-spa-with-react
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+### Running the Application
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+The application will be available through the localhost URL provided by Vite.
+
+### Building for Production
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+### Running Tests
+
+Run the Jest test suite:
+
+```bash
+npm test
+```
+
+Tests cover:
+
+- Adding projects through the form
+- Rendering project lists and project cards
+- Searching/filtering projects
+- Theme switching behavior
+- Form validation
+
+
+### File layout:
+
+summative-lab-portfolio-spa-with-react/
+├── public/
+│   └── favicon.svg
+└── src/
+     ├── components/
+     │   ├── AddProjectForm.jsx
+     │   ├── Header.jsx
+     │   ├── ProjectCard.jsx
+     │   ├── ProjectList.jsx
+     │   ├── SearchBar.jsx
+     │   └── ThemeSwitcher.jsx
+     ├── assets/
+     │   └── backgrounds/   
+     │       └── retro-bg.png
+     │
+     ├── context/ (themes)
+     │   └── ThemeContext.jsx
+     │
+     ├── data/  (dummy data only, not required)
+     │   └── ProjectsData.jsx
+     │
+     ├── tests/
+     │   ├── AddProjectForm.test.jsx
+     │   ├── App.test.jsx
+     │   ├── ProjectCard.test.jsx
+     │   ├── ProjectList.test.jsx
+     │   ├── SearchBar.test.jsx
+     │   └── ThemeSwitcher.test.jsx
+     │
+     ├── App.jsx
+     ├── main.jsx
+     ├── index.html
+     └── index.css (contains backgrounds only, Tailwind used for everything else)

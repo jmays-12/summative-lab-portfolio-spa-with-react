@@ -56,7 +56,7 @@ function AddProjectForm({ onAdd }) {
                     font-bold
                     text-shadow-xs
                     ${styles.font}
-                    ${styles.text}
+                    ${styles.heading}
                     ${styles.transition}
                 `}
             >
@@ -190,7 +190,7 @@ function AddProjectForm({ onAdd }) {
                 type="submit"
                 className={`
                     border
-                    rounded
+                    ${styles.roundedControl}
                     px-4
                     py-2
                     w-fit

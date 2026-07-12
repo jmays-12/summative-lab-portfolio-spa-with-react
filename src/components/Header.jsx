@@ -34,7 +34,7 @@ function Header() {
                     font-bold
                     text-center
                     ${styles.font}
-                    ${styles.text}
+                    ${styles.heading}
                 `}
             >
                 Personal Project Showcase
